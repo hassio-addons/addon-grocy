@@ -31,6 +31,7 @@ comparison to installing any other Hass.io add-on.
 1. Install the "Grocy" add-on.
 1. Start the "Grocy" add-on
 1. Check the logs of the "Grocy" add-on to see if everything went well.
+1. Default login is user: admin  password: admin
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.

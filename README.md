@@ -31,7 +31,7 @@ comparison to installing any other Hass.io add-on.
 1. Install the "Grocy" add-on.
 1. Start the "Grocy" add-on
 1. Check the logs of the "Grocy" add-on to see if everything went well.
-1. Default login is user: admin  password: admin
+1. Default login is user: `admin` password: `admin`
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
@@ -98,6 +98,22 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
 
+## Embedding into Home Assistant
+
+It is possible to embed the Grocy interface directly into
+Home Assistant, allowing you to access it through the Home Assistant frontend.
+
+Home Assistant provides the `panel_iframe` component, for these purposes.
+
+Example configuration:
+
+```yaml
+panel_iframe:
+  grocy:
+    title: Grocy
+    icon: mdi:fridge-outline
+    url: http://addres.to.your.hass.io:9192
+```
 ## Known issues and limitations
 
 - Lorem ipsum.

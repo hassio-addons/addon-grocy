@@ -114,6 +114,7 @@ panel_iframe:
     icon: mdi:fridge-outline
     url: http://addres.to.your.hass.io:9192
 ```
+
 ## Known issues and limitations
 
 - Lorem ipsum.

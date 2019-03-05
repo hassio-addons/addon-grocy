@@ -22,13 +22,35 @@
     "80/tcp": 9192
   },
   "options": {
+    "culture": "en",
+    "currency": "$",
+    "features": {
+      "batteries": true,
+      "calendar": true,
+      "chores": true,
+      "equipment": true,
+      "recipes": true,
+      "shoppinglist": true,
+      "tasks": true
+    },
     "ssl": true,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem"
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
+    "culture": "match(^(da|de|en|es|fr|it|nl|no|pl|ru|ta|tr)$)",
+    "currency": "str",
     "ssl": "bool",
+    "features": {
+      "batteries": "bool",
+      "calendar": "bool",
+      "chores": "bool",
+      "equipment": "bool",
+      "recipes": "bool",
+      "shoppinglist": "bool",
+      "tasks": "bool"
+    },
     "certfile": "str",
     "keyfile": "str"
   },

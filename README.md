@@ -20,9 +20,9 @@ for your home.
 
 ## About
 
-<a href="https://grocy.info/">Grocy</a> - ERP beyond your fridge is a powerful groceries & household management solution for your home. Grocy have features like `stock overview`, `shopping list`, `recipes`, `chores`, `tasks`, `inventory` and many more. 
+[grocy] - ERP beyond your fridge is a powerful groceries & household management solution for your home. Grocy have features like `stock overview`, `shopping list`, `recipes`, `chores`, `tasks`, `inventory` and many more. 
 
-<a href="https://grocy.info/">Try out the demo here</a>
+Try out the demo on [grocy]
 
 ## Installation
 
@@ -216,6 +216,7 @@ SOFTWARE.
 [frenck]: https://github.com/frenck
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-grocy/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-grocy/pipelines
+[grocy]: https://grocy.info/
 [home-assistant]: https://home-assistant.io
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-grocy/issues

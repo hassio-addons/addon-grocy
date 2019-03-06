@@ -20,7 +20,9 @@ for your home.
 
 ## About
 
-Lorem ipsum.
+<a href="https://grocy.info/">Grocy</a> - ERP beyond your fridge is a powerful groceries & household management solution for your home. Grocy have features like `stock overview`, `shopping list`, `recipes`, `chores`, `tasks`, `inventory` and many more. 
+
+<a href="https://grocy.info/">Try out the demo here</a>
 
 ## Installation
 

@@ -17,6 +17,7 @@ RUN \
         php7-pdo_sqlite=7.2.13-r0 \
         php7-pdo=7.2.13-r0 \
         php7-tokenizer=7.2.13-r0 \
+        php7-fileinfo=7.2.13-r0 \
         php7=7.2.13-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \

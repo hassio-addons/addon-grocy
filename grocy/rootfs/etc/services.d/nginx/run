@@ -1,12 +1,12 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Grocy
 # Runs the Nginx daemon
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
 
 # Wait for PHP-FPM to become available
 s6-svwait -u -t 5000 /var/run/s6/services/php-fpm
+
+bashio::log.info "Starting NGinx...."
 
 exec nginx -g "daemon off;"

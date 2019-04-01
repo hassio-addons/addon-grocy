@@ -1,43 +1,42 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Grocy
 # Runs the PHP-FPM daemon
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
 export GROCY_CULTURE
 export GROCY_CURRENCY
 
-if hass.config.false 'features.batteries'; then
+bashio::log.info "Starting PHP-FPM..."
+
+if bashio::config.false 'features.batteries'; then
     export GROCY_FEATURE_FLAG_BATTERIES=0
 fi
 
-if hass.config.false 'features.calendar'; then
+if bashio::config.false 'features.calendar'; then
     export GROCY_FEATURE_FLAG_CALENDAR=0
 fi
 
-if hass.config.false 'features.chores'; then
+if bashio::config.false 'features.chores'; then
     export GROCY_FEATURE_FLAG_CHORES=0
 fi
 
-if hass.config.false 'features.equipment'; then
+if bashio::config.false 'features.equipment'; then
     export GROCY_FEATURE_FLAG_EQUIPMENT=0
 fi
 
-if hass.config.false 'features.recipes'; then
+if bashio::config.false 'features.recipes'; then
     export GROCY_FEATURE_FLAG_RECIPES=0
 fi
 
-if hass.config.false 'features.shoppinglist'; then
+if bashio::config.false 'features.shoppinglist'; then
     export GROCY_FEATURE_FLAG_SHOPPINGLIST=0
 fi
 
-if hass.config.false 'features.tasks'; then
+if bashio::config.false 'features.tasks'; then
     export GROCY_FEATURE_FLAG_TASKS=0
 fi
 
-GROCY_CULTURE=$(hass.config.get "culture")
-GROCY_CURRENCY=$(hass.config.get "currency")
+GROCY_CULTURE=$(bashio::config "culture")
+GROCY_CURRENCY=$(bashio::config "currency")
 
 exec php-fpm7 --nodaemonize

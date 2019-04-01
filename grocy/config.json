@@ -53,8 +53,5 @@
     },
     "certfile": "str",
     "keyfile": "str"
-  },
-  "environment": {
-    "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
   }
 }

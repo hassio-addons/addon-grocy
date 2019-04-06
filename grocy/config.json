@@ -53,6 +53,7 @@
       "tasks": "bool"
     },
     "certfile": "str",
-    "keyfile": "str"
+    "keyfile": "str",
+    "max_upload_size": "int?"
   }
 }

@@ -104,6 +104,11 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
 
+### Option: `max_upload_size`
+
+Maximum file size for uploads, defaults if not specified to 1Mb. Should be
+specified as an integer, i.e. 2 for 2Mb.
+
 ## Embedding into Home Assistant
 
 It is possible to embed the Grocy interface directly into
@@ -120,10 +125,6 @@ panel_iframe:
     icon: mdi:fridge-outline
     url: http://addres.to.your.hass.io:9192
 ```
-
-## Known issues and limitations
-
-- Lorem ipsum.
 
 ## Changelog & Releases
 

@@ -16,3 +16,8 @@ if bashio::config.true 'ssl'; then
     sed -i "s/%%certfile%%/${certfile}/g" /etc/nginx/nginx.conf
     sed -i "s/%%keyfile%%/${keyfile}/g" /etc/nginx/nginx.conf
 fi
+
+if bashio::config.exists 'max_upload_size'; then
+    sed -i "s#client_max_body_size 1M#client_max_body_size \
+        $(bashio::config 'max_upload_size')M#g" /etc/nginx/nginx.conf
+fi

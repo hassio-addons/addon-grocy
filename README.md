@@ -60,6 +60,17 @@ Example add-on configuration:
 
 ```json
 {
+  "culture": "en",
+  "currency": "$",
+  "features": {
+    "batteries": true,
+    "calendar": true,
+    "chores": true,
+    "equipment": true,
+    "recipes": true,
+    "shoppinglist": true,
+    "tasks": true
+  },
   "log_level": "info",
   "ssl": false,
   "certfile": "fullchain.pem",
@@ -103,6 +114,22 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+
+### Option: `culture`
+
+Is used for setting the language.
+Choose between `da` (Danish), `de`(Deutch), `en` (English), `es` (Spanish), `fr` (French), `it` (Italian), `nl` (Dutch), `no` (Norwegian), `pl` (Polish), `ru` (Russian).
+
+### Option: `currency`
+
+Is used for setting the currency.
+Choose between `$`, `€`, `£`.
+
+### Option: `features`
+
+Is used for enable or disable features in Grocy.
+The following features can be enabled or disabled `batteries`, `calendar`, `chores`, `equipment`, `recipes`, `shoppinglist`, `tasks`.
+Set it `true` to enable it, `false` otherwise.
 
 ## Embedding into Home Assistant
 

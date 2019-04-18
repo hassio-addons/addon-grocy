@@ -117,8 +117,18 @@ The private key file to use for SSL.
 
 ### Option: `culture`
 
-Is used for setting the language.
-Choose between `da` (Danish), `de`(Deutch), `en` (English), `es` (Spanish), `fr` (French), `it` (Italian), `nl` (Dutch), `no` (Norwegian), `pl` (Polish), `ru` (Russian).
+Is used for setting the language. Choose between:
+
+- `da` (Danish)
+- `de` (Deutch)
+- `en` (English)
+- `es` (Spanish)
+- `fr` (French)
+- `it` (Italian)
+- `nl` (Dutch)
+- `no` (Norwegian)
+- `pl` (Polish)
+- `ru` (Russian)
 
 ### Option: `currency`
 
@@ -128,7 +138,16 @@ Choose between `$`, `€`, `£`.
 ### Option: `features`
 
 Is used for enable or disable features in Grocy.
-The following features can be enabled or disabled `batteries`, `calendar`, `chores`, `equipment`, `recipes`, `shoppinglist`, `tasks`.
+The following features can be enabled or disabled:
+
+- `batteries`
+- `calendar`
+- `chores`
+- `equipment`
+- `recipes`
+- `shoppinglist`
+- `tasks`
+
 Set it `true` to enable it, `false` otherwise.
 
 ## Embedding into Home Assistant

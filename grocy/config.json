@@ -22,6 +22,9 @@
   "ports": {
     "80/tcp": 9192
   },
+  "ports_description": {
+    "80/tcp": "Web interface"
+  },
   "options": {
     "culture": "en",
     "currency": "$",

@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Grocy
-# Ensures data is store in a persistent location
+# Sets up Grocy before the server starts
 # ==============================================================================
 if ! bashio::fs.directory_exists "/data/grocy"; then
     bashio::log.debug 'Data directory not initialized, doing that now...'

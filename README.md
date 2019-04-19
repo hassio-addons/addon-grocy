@@ -24,10 +24,12 @@
 ERP beyond your fridge! A groceries & household management solution
 for your home.
 
+![Grocy screenshot](images/screenshot.gif)
+
 ## About
 
-[grocy] - ERP beyond your fridge is a powerful groceries & household management
-solution for your home. Grocy has features like:
+[Grocy][grocy] - ERP beyond your fridge is a powerful groceries & household
+management solution for your home, delivering features like:
 
 - Stock management
 - Shopping list
@@ -36,7 +38,7 @@ solution for your home. Grocy has features like:
 - Inventory
 - and many more.
 
-Try out the demo on [grocy].
+[Try out the only demo of Grocy][grocy-demo].
 
 ## Installation
 
@@ -45,9 +47,11 @@ comparison to installing any other Hass.io add-on.
 
 1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
 1. Install the "Grocy" add-on.
-1. Start the "Grocy" add-on
+1. Start the "Grocy" add-on.
 1. Check the logs of the "Grocy" add-on to see if everything went well.
-1. Default login is user: `admin` password: `admin`
+1. Click on the "OPEN WEB UI" button to get into the interface of Grocy.
+1. The default login is user: `admin` password: `admin`.
+1. Enjoy the add-on!
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
@@ -132,13 +136,14 @@ Is used for setting the language. Choose between:
 
 ### Option: `currency`
 
-Is used for setting the currency.
-Choose between `$`, `€`, `£`.
+Determines the currency as displayed in the Grocy interface.
+Examples:  `$`, `€`, `£` or `EUR`.
 
 ### Option: `features`
 
-Is used for enable or disable features in Grocy.
-The following features can be enabled or disabled:
+Is used for enable or disable features in Grocy. Disabled features
+are hidden from the web interface. The following features can be enabled
+or disabled:
 
 - `batteries`
 - `calendar`
@@ -152,8 +157,8 @@ Set it `true` to enable it, `false` otherwise.
 
 ## Embedding into Home Assistant
 
-It is possible to embed the Grocy interface directly into
-Home Assistant, allowing you to access it through the Home Assistant frontend.
+It is possible to embed the Grocy interface directly into Home Assistant,
+allowing you to access it through the Home Assistant frontend.
 
 Home Assistant provides the `panel_iframe` component, for these purposes.
 
@@ -169,7 +174,9 @@ panel_iframe:
 
 ## Known issues and limitations
 
-- Lorem ipsum.
+- Grocy support to provide custom lookup resources to lookup information
+  on the internet based on the product barcode. This is currently not yet
+  supported by the add-on.
 
 ## Changelog & Releases
 
@@ -268,6 +275,7 @@ SOFTWARE.
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-grocy/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-grocy/pipelines
 [grocy]: https://grocy.info/
+[grocy-demo]: https://demo-en.grocy.info
 [home-assistant]: https://home-assistant.io
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-grocy/issues

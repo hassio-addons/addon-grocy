@@ -33,7 +33,7 @@ if bashio::config.false 'features.shoppinglist'; then
 fi
 
 if bashio::config.false 'features.stock'; then
-    export FEATURE_FLAG_STOCK=0
+    export GROCY_FEATURE_FLAG_STOCK=0
 fi
 
 if bashio::config.false 'features.tasks'; then

@@ -56,6 +56,16 @@ comparison to installing any other Hass.io add-on.
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
 
+### Hass.io Notes
+
+If running this add-on inside a Hass.io container installation (e.g. on a Raspberry Pi 3), note the following caveats:
+
+* Your Grocy URL by default will be `http://<Your-Hassio-LAN-IP>:9192/` (for example: `https://192.168.0.34:9192/`)
+* Forwarding the Grocy port (default 9192) through your router to the internet *may* allow you to reach it via `https://<Your-Hassio-DNS-Name>:9192/` depending on your ISP, router configuration, and configured port number.
+* If accessing it internally only via the IP, set `ssl: false` in the configuration, since SSL certificates don't work with IP addresses.
+* It is not currently possible to access it externally via DNS with SSL enabled, **and** internally via the IP address with SSL disabled at the same time.
+  * You can browse to it with SSL via the IP (e.g. `https://192.168.0.34:9192/`), you will get an SSL error in your browser but if you proceed through the warning, the site will still work.
+
 ## Configuration
 
 **Note**: _Remember to restart the add-on when the configuration is changed._

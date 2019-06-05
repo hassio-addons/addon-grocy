@@ -15,6 +15,11 @@ if ! bashio::fs.directory_exists "/data/grocy"; then
     find /data/grocy -not -perm 0755 -type d -exec chmod 0755 {} \;
 fi
 
+if ! bashio::fs.directory_exists "/data/grocy/viewcache"; then
+    mkdir -p /data/grocy/viewcache
+    chown nginx:nginx /data/grocy/viewcache
+fi
+
 bashio::log.debug 'Symlinking data directory to persistent storage location...'
 rm -f -r /var/www/grocy/data
 ln -s /data/grocy /var/www/grocy/data

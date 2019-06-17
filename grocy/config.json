@@ -44,7 +44,7 @@
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
-    "culture": "match(^(da|de|en|es|fr|it|nl|no|pl|ru|sv_SE|ta|tr)$)",
+    "culture": "match(^(da|de|en|en_GB|es|fr|it|nl|no|pl|ru|sv_SE|ta|tr)$)",
     "currency": "str",
     "features": {
       "batteries": "bool",

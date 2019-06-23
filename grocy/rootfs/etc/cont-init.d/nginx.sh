@@ -4,9 +4,10 @@
 # Configures NGINX for use with Grocy
 # ==============================================================================
 declare certfile
-declare keyfile
-declare ingress_interface
 declare ingress_entry
+declare ingress_interface
+declare keyfile
+declare port
 
 port=$(bashio::addon.port 80)
 if bashio::var.has_value "${port}"; then

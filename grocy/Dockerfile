@@ -21,7 +21,7 @@ RUN \
         php7=7.3.6-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.20.1-r0 \
+        git=2.22.0-r0 \
         yarn=1.12.3-r0 \
         composer=1.8.0-r1 \
     \

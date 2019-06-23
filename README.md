@@ -124,7 +124,7 @@ The private key file to use for SSL.
 Is used for setting the language. Choose between:
 
 - `da` (Danish)
-- `de` (Deutch)
+- `de` (German)
 - `en` (English)
 - `es` (Spanish)
 - `fr` (French)
@@ -133,6 +133,9 @@ Is used for setting the language. Choose between:
 - `no` (Norwegian)
 - `pl` (Polish)
 - `ru` (Russian)
+- `sv_SE` (Swedish - Sweden)
+- `ta` (Tamil)
+- `tr` (Turkish)
 
 ### Option: `currency`
 

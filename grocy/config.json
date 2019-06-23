@@ -22,10 +22,10 @@
     "ssl"
   ],
   "ports": {
-    "80/tcp": 9192
+    "80/tcp": null
   },
   "ports_description": {
-    "80/tcp": "Web interface"
+    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
   },
   "options": {
     "culture": "en",

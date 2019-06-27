@@ -158,23 +158,6 @@ or disabled:
 
 Set it `true` to enable it, `false` otherwise.
 
-## Embedding into Home Assistant
-
-It is possible to embed the Grocy interface directly into Home Assistant,
-allowing you to access it through the Home Assistant frontend.
-
-Home Assistant provides the `panel_iframe` component, for these purposes.
-
-Example configuration:
-
-```yaml
-panel_iframe:
-  grocy:
-    title: Grocy
-    icon: mdi:fridge-outline
-    url: http://addres.to.your.hass.io:9192
-```
-
 ## Known issues and limitations
 
 - Grocy support to provide custom lookup resources to lookup information

@@ -139,8 +139,10 @@ Is used for setting the language. Choose between:
 
 ### Option: `currency`
 
-Determines the currency as displayed in the Grocy interface.
-Examples:  `$`, `€`, `£` or `EUR`.
+Determines the currency as displayed in the Grocy interface, specified by the
+ISO4217 three digit currency code.
+
+Examples:  `USD`, `CAD`, `GBP` or `EUR`.
 
 ### Option: `features`
 

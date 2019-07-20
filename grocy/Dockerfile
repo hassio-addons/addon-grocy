@@ -10,15 +10,15 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         nginx=1.16.0-r2 \
-        php7-fpm=7.3.6-r0 \
-        php7-json=7.3.6-r0 \
-        php7-mbstring=7.3.6-r0 \
-        php7-opcache=7.3.6-r0 \
-        php7-pdo_sqlite=7.3.6-r0 \
-        php7-pdo=7.3.6-r0 \
-        php7-tokenizer=7.3.6-r0 \
-        php7-fileinfo=7.3.6-r0 \
-        php7=7.3.6-r0 \
+        php7-fpm=7.3.7-r0 \
+        php7-json=7.3.7-r0 \
+        php7-mbstring=7.3.7-r0 \
+        php7-opcache=7.3.7-r0 \
+        php7-pdo_sqlite=7.3.7-r0 \
+        php7-pdo=7.3.7-r0 \
+        php7-tokenizer=7.3.7-r0 \
+        php7-fileinfo=7.3.7-r0 \
+        php7=7.3.7-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.22.0-r0 \

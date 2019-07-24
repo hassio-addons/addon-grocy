@@ -30,3 +30,7 @@ sed -i "s/%%interface%%/${ingress_interface}/g" /etc/nginx/servers/ingress.conf
 
 ingress_entry=$(bashio::addon.ingress_entry)
 sed -i "s#%%ingress_entry%%#${ingress_entry}#g" /etc/php7/php-fpm.d/ingress.conf
+
+ingress_url=$(bashio::addon.ingress_url)
+sed -i "s#%%ingress_url%%#${ingress_url}#g" \
+    /etc/nginx/servers/ingress.conf

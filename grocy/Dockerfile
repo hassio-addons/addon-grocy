@@ -11,6 +11,7 @@ RUN \
     apk add --no-cache \
         nginx=1.16.1-r0 \
         php7-fpm=7.3.9-r0 \
+		php7-gd=7.3.9-r0 \
         php7-json=7.3.9-r0 \
         php7-mbstring=7.3.9-r0 \
         php7-opcache=7.3.9-r0 \

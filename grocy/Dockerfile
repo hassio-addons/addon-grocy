@@ -17,6 +17,7 @@ RUN \
         php7-opcache=7.3.9-r0 \
         php7-pdo_sqlite=7.3.9-r0 \
         php7-pdo=7.3.9-r0 \
+        php7-simplexml-7.3.9-r0 \
         php7-tokenizer=7.3.9-r0 \
         php7-fileinfo=7.3.9-r0 \
         php7=7.3.9-r0 \

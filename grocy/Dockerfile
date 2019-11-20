@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        nginx=1.16.1-r0 \
+        nginx=1.16.1-r1 \
         php7-fpm=7.3.9-r0 \
         php7-gd=7.3.9-r0 \
         php7-json=7.3.9-r0 \

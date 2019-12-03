@@ -150,6 +150,24 @@ ISO4217 three digit currency code.
 
 Examples:  `USD`, `CAD`, `GBP` or `EUR`.
 
+### Option: `entry_page`
+
+Allows you to specify an custom homepage if desired.
+
+You can use the one of the following values:
+
+- `batteries`
+- `calendar`
+- `chores`
+- `equipment`
+- `mealplan`
+- `recipes`
+- `shoppinglist`
+- `stock`
+- `tasks`
+
+By default the homepage is set to the stock overview.
+
 ### Option: `features`
 
 Is used for enable or disable features in Grocy. Disabled features

@@ -45,16 +45,13 @@ management solution for your home, delivering features like:
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
+1. Search for the "Grocy" add-on in the Hass.io add-on store.
 1. Install the "Grocy" add-on.
 1. Start the "Grocy" add-on.
 1. Check the logs of the "Grocy" add-on to see if everything went well.
 1. Click on the "OPEN WEB UI" button to get into the interface of Grocy.
 1. The default login is user: `admin` password: `admin`.
 1. Enjoy the add-on!
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
@@ -65,7 +62,8 @@ Example add-on configuration:
 ```json
 {
   "culture": "en",
-  "currency": "$",
+  "currency": "USD",
+  "entry_page": "stock",
   "features": {
     "batteries": true,
     "calendar": true,
@@ -74,6 +72,14 @@ Example add-on configuration:
     "recipes": true,
     "shoppinglist": true,
     "tasks": true
+  },
+  "tweaks": {
+    "chores_assignment": true,
+    "multiple_shopping_lists": true,
+    "stock_best_before_date_tracking": true,
+    "stock_location_tracking": true,
+    "stock_price_tracking": true,
+    "stock_product_opened_tracking": true
   },
   "log_level": "info",
   "ssl": false,
@@ -157,6 +163,20 @@ or disabled:
 - `recipes`
 - `shoppinglist`
 - `tasks`
+
+Set it `true` to enable it, `false` otherwise.
+
+### Option: `tweaks`
+
+These options are used to tweak part of the core behavior of Grocy.
+The following sub features can be enabled or disabled:
+
+- `chores_assignment`
+- `multiple_shopping_lists`
+- `stock_best_before_date_tracking`
+- `stock_location_tracking`
+- `stock_price_tracking`
+- `stock_product_opened_tracking`
 
 Set it `true` to enable it, `false` otherwise.
 

@@ -5,6 +5,7 @@
 # ==============================================================================
 export GROCY_CULTURE
 export GROCY_CURRENCY
+export GROCY_ENTRY_PAGE
 
 bashio::log.info "Starting PHP-FPM..."
 
@@ -42,5 +43,6 @@ fi
 
 GROCY_CULTURE=$(bashio::config "culture")
 GROCY_CURRENCY=$(bashio::config "currency")
+GROCY_ENTRY_PAGE=$(bashio::config 'entry_page')
 
 exec php-fpm7 --nodaemonize

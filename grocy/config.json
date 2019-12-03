@@ -31,6 +31,7 @@
   "options": {
     "culture": "en",
     "currency": "USD",
+    "entry_page": "stock",
     "features": {
       "batteries": true,
       "calendar": true,
@@ -49,6 +50,7 @@
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
     "culture": "match(^(da|de|en|en_GB|es|fr|it|nl|no|pl|ru|sv_SE|ta|tr)$)",
     "currency": "match(^[A-Z]{3}$)",
+    "entry_page": "match(^(stock|shoppinglist|recipes|chores|tasks|batteries|equipment|calendar|mealplan)$)",
     "features": {
       "batteries": "bool",
       "calendar": "bool",

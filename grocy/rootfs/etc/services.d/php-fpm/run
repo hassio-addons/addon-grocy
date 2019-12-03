@@ -41,6 +41,30 @@ if bashio::config.false 'features.tasks'; then
     export GROCY_FEATURE_FLAG_TASKS=0
 fi
 
+if bashio::config.false 'tweaks.chores_assignment'; then
+    export GROCY_FEATURE_FLAG_CHORES_ASSIGNMENTS=0
+fi
+
+if bashio::config.false 'tweaks.multiple_shopping_lists'; then
+    export GROCY_FEATURE_FLAG_SHOPPINGLIST_MULTIPLE_LISTS=0
+fi
+
+if bashio::config.false 'tweaks.stock_best_before_date_tracking'; then
+    export GROCY_FEATURE_FLAG_STOCK_BEST_BEFORE_DATE_TRACKING=0
+fi
+
+if bashio::config.false 'tweaks.stock_location_tracking'; then
+    export GROCY_FEATURE_FLAG_STOCK_LOCATION_TRACKING=0
+fi
+
+if bashio::config.false 'tweaks.stock_price_tracking'; then
+    export GROCY_FEATURE_FLAG_STOCK_PRICE_TRACKING=0
+fi
+
+if bashio::config.false 'tweaks.stock_product_opened_tracking'; then
+    export GROCY_FEATURE_FLAG_STOCK_PRODUCT_OPENED_TRACKING=0
+fi
+
 GROCY_CULTURE=$(bashio::config "culture")
 GROCY_CURRENCY=$(bashio::config "currency")
 GROCY_ENTRY_PAGE=$(bashio::config 'entry_page')

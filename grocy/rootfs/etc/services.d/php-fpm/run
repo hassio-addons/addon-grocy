@@ -61,6 +61,10 @@ if bashio::config.false 'tweaks.stock_price_tracking'; then
     export GROCY_FEATURE_FLAG_STOCK_PRICE_TRACKING=0
 fi
 
+if bashio::config.false 'tweaks.stock_product_freezing'; then
+    export GROCY_FEATURE_FLAG_STOCK_PRODUCT_FREEZING=0
+fi
+
 if bashio::config.false 'tweaks.stock_product_opened_tracking'; then
     export GROCY_FEATURE_FLAG_STOCK_PRODUCT_OPENED_TRACKING=0
 fi

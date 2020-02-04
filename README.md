@@ -309,7 +309,7 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-grocy.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
-[patreon]: https://www.patreon.com/
+[patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [python-packages]: https://pypi.org/
 [reddit]: https://reddit.com/r/homeassistant

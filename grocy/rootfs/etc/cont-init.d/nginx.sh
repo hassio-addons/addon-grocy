@@ -4,7 +4,7 @@
 # Configures NGINX for use with Grocy
 # ==============================================================================
 declare certfile
-declare hassio_dns
+declare dns_host
 declare ingress_entry
 declare ingress_interface
 declare keyfile
@@ -32,5 +32,5 @@ sed -i "s/%%interface%%/${ingress_interface}/g" /etc/nginx/servers/ingress.conf
 ingress_entry=$(bashio::addon.ingress_entry)
 sed -i "s#%%ingress_entry%%#${ingress_entry}#g" /etc/php7/php-fpm.d/ingress.conf
 
-hassio_dns=$(bashio::dns.host)
-sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/includes/resolver.conf
+dns_host=$(bashio::dns.host)
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/includes/resolver.conf

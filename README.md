@@ -59,33 +59,29 @@ comparison to installing any other Hass.io add-on.
 
 Example add-on configuration:
 
-```json
-{
-  "culture": "en",
-  "currency": "USD",
-  "entry_page": "stock",
-  "features": {
-    "batteries": true,
-    "calendar": true,
-    "chores": true,
-    "equipment": true,
-    "recipes": true,
-    "shoppinglist": true,
-    "tasks": true
-  },
-  "tweaks": {
-    "chores_assignment": true,
-    "multiple_shopping_lists": true,
-    "stock_best_before_date_tracking": true,
-    "stock_location_tracking": true,
-    "stock_price_tracking": true,
-    "stock_product_opened_tracking": true
-  },
-  "log_level": "info",
-  "ssl": false,
-  "certfile": "fullchain.pem",
-  "keyfile": "privkey.pem"
-}
+```yaml
+culture: en
+currency: USD
+entry_page: stock
+features:
+  batteries: true
+  calendar: true
+  chores: true
+  equipment: true
+  recipes: true
+  shoppinglist: true
+  tasks: true
+tweaks:
+  chores_assignment: true
+  multiple_shopping_lists: true
+  stock_best_before_date_tracking: true
+  stock_location_tracking: true
+  stock_price_tracking: true
+  stock_product_opened_tracking: true
+log_level: info
+ssl: false
+certfile: fullchain.pem
+keyfile: privkey.pem
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_

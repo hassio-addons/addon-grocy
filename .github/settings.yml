@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "Grocy - Community Hass.io Add-on for Home Assistant"
+  description: "Grocy - Community Home Assistant Add-ons"
   homepage: https://addons.community
-  topics: groceries, food, erp, grocy, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: groceries, food, erp, grocy, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false

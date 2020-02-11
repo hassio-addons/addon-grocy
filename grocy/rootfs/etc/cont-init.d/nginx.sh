@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Grocy
+# Community Home Assistant Add-on: Grocy
 # Configures NGINX for use with Grocy
 # ==============================================================================
 declare certfile

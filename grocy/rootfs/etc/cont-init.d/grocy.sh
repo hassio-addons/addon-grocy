@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-on: Grocy
+# Home Assistant Community Add-on: Grocy
 # Sets up Grocy before the server starts
 # ==============================================================================
 if ! bashio::fs.directory_exists "/data/grocy"; then

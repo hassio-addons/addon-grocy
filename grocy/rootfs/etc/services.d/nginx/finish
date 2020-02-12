@@ -1,6 +1,6 @@
 #!/usr/bin/execlineb -S0
 # ==============================================================================
-# Community Home Assistant Add-on: Grocy
+# Home Assistant Community Add-on: Grocy
 # Take down the S6 supervision tree when Nginx fails
 # ==============================================================================
 if { s6-test ${1} -ne 0 }

@@ -1,6 +1,6 @@
 ---
 repository:
-  description: "Grocy - Community Home Assistant Add-ons"
+  description: "Grocy - Home Assistant Community Add-ons"
   homepage: https://addons.community
   topics: groceries, food, erp, grocy, addon, addons, home-assistant, homeassistant
   private: false

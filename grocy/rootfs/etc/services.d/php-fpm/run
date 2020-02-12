@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-on: Grocy
+# Home Assistant Community Add-on: Grocy
 # Runs the PHP-FPM daemon
 # ==============================================================================
 export GROCY_CULTURE

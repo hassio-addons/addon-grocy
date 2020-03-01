@@ -42,13 +42,18 @@ if bashio::config.false 'features.tasks'; then
     export GROCY_FEATURE_FLAG_TASKS=0
 fi
 
+if bashio::config.has_value 'tweaks.calendar_first_day_of_week'; then
+    GROCY_DAYWEEK=$(bashio::config 'tweaks.calendar_first_day_of_week')
+    export GROCY_CALENDAR_FIRST_DAY_OF_WEEK=${GROCY_DAYWEEK}
+fi
+
 if bashio::config.false 'tweaks.chores_assignment'; then
     export GROCY_FEATURE_FLAG_CHORES_ASSIGNMENTS=0
 fi
 
 if bashio::config.has_value 'tweaks.meal_plan_first_day_of_week'; then
-    GROCY_DAYWEEK=$(bashio::config 'tweaks.meal_plan_first_day_of_week')
-    export GROCY_MEAL_PLAN_FIRST_DAY_OF_WEEK=${GROCY_DAYWEEK}
+    GROCY_MEALDAY=$(bashio::config 'tweaks.meal_plan_first_day_of_week')
+    export GROCY_MEAL_PLAN_FIRST_DAY_OF_WEEK=${GROCY_MEALDAY}
 fi
 
 if bashio::config.false 'tweaks.multiple_shopping_lists'; then

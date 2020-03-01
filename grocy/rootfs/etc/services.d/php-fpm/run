@@ -6,7 +6,6 @@
 export GROCY_CULTURE
 export GROCY_CURRENCY
 export GROCY_ENTRY_PAGE
-export GROCY_DAYWEEK
 
 bashio::log.info "Starting PHP-FPM..."
 

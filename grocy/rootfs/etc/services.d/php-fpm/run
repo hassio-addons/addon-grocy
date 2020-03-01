@@ -3,6 +3,7 @@
 # Home Assistant Community Add-on: Grocy
 # Runs the PHP-FPM daemon
 # ==============================================================================
+declare mealday
 export GROCY_CULTURE
 export GROCY_CURRENCY
 export GROCY_ENTRY_PAGE
@@ -46,8 +47,8 @@ if bashio::config.false 'tweaks.chores_assignment'; then
 fi
 
 if bashio::config.has_value 'tweaks.meal_plan_first_day_of_week'; then
-    GROCY_MEALDAY=$(bashio::config 'tweaks.meal_plan_first_day_of_week')
-    export GROCY_MEAL_PLAN_FIRST_DAY_OF_WEEK=${GROCY_MEALDAY}
+    mealday=$(bashio::config 'tweaks.meal_plan_first_day_of_week')
+    export GROCY_MEAL_PLAN_FIRST_DAY_OF_WEEK=${mealday}
 fi
 
 if bashio::config.false 'tweaks.multiple_shopping_lists'; then

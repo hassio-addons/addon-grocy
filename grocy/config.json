@@ -36,7 +36,6 @@
     },
     "tweaks": {
       "chores_assignment": true,
-      "meal_plan_first_day_of_week": 0,
       "multiple_shopping_lists": true,
       "stock_best_before_date_tracking": true,
       "stock_location_tracking": true,

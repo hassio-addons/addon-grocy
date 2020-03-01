@@ -63,6 +63,7 @@
       "tasks": "bool"
     },
     "tweaks": {
+      "calendar_first_day_of_week": "int(0,6)?",
       "chores_assignment": "bool",
       "meal_plan_first_day_of_week": "int(0,6)?",
       "multiple_shopping_lists": "bool",

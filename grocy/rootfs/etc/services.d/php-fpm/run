@@ -3,6 +3,7 @@
 # Home Assistant Community Add-on: Grocy
 # Runs the PHP-FPM daemon
 # ==============================================================================
+declare caldayweek
 declare mealday
 export GROCY_CULTURE
 export GROCY_CURRENCY
@@ -40,6 +41,11 @@ fi
 
 if bashio::config.false 'features.tasks'; then
     export GROCY_FEATURE_FLAG_TASKS=0
+fi
+
+if bashio::config.has_value 'tweaks.calendar_first_day_of_week'; then
+    caldayweek=$(bashio::config 'tweaks.calendar_first_day_of_week')
+    export GROCY_CALENDAR_FIRST_DAY_OF_WEEK=${caldayweek}
 fi
 
 if bashio::config.false 'tweaks.chores_assignment'; then

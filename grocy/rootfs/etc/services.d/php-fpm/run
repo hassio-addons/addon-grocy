@@ -6,6 +6,7 @@
 export GROCY_CULTURE
 export GROCY_CURRENCY
 export GROCY_ENTRY_PAGE
+export GROCY_DAYWEEK
 
 bashio::log.info "Starting PHP-FPM..."
 
@@ -39,6 +40,11 @@ fi
 
 if bashio::config.false 'features.tasks'; then
     export GROCY_FEATURE_FLAG_TASKS=0
+fi
+
+if bashio::config.has_value 'tweaks.calendar_first_day_of_week'; then
+    GROCY_DAYWEEK=$(bashio::config 'tweaks.calendar_first_day_of_week')
+    export GROCY_CALENDAR_FIRST_DAY_OF_WEEK=${GROCY_DAYWEEK}
 fi
 
 if bashio::config.false 'tweaks.chores_assignment'; then

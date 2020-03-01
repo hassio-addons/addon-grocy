@@ -194,6 +194,12 @@ The following sub features can be enabled or disabled:
 
 Set it `true` to enable it, `false` otherwise.
 
+The following sub features can be set to specify a day (0-6), where 0 would
+equal Sunday:
+
+- `calendar_first_day_of_week`
+- `meal_plan_first_day_of_week`
+
 ## Known issues and limitations
 
 - Grocy support to provide custom lookup resources to lookup information

@@ -70,6 +70,7 @@ features:
   equipment: true
   recipes: true
   shoppinglist: true
+  stock: true
   tasks: true
 tweaks:
   chores_assignment: true
@@ -77,6 +78,7 @@ tweaks:
   stock_best_before_date_tracking: true
   stock_location_tracking: true
   stock_price_tracking: true
+  stock_produc_freezing: true
   stock_product_opened_tracking: true
 log_level: info
 ssl: false
@@ -176,6 +178,7 @@ or disabled:
 - `equipment`
 - `recipes`
 - `shoppinglist`
+- `stock`
 - `tasks`
 
 Set it `true` to enable it, `false` otherwise.
@@ -190,6 +193,7 @@ The following sub features can be enabled or disabled:
 - `stock_best_before_date_tracking`
 - `stock_location_tracking`
 - `stock_price_tracking`
+- `stock_product_freezing`
 - `stock_product_opened_tracking`
 
 Set it `true` to enable it, `false` otherwise.

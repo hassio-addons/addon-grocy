@@ -76,12 +76,14 @@ LABEL \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Franck Nijhof <frenck@addons.community>" \
-    org.label-schema.description="ERP beyond your fridge! A groceries & household management solution for your home" \
-    org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.name="Grocy" \
-    org.label-schema.schema-version="1.0" \
-    org.label-schema.url="https://community.home-assistant.io/t/home-assistant-community-add-on-grocy/112422?u=frenck" \
-    org.label-schema.usage="https://github.com/hassio-addons/addon-grocy/tree/master/README.md" \
-    org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/hassio-addons/addon-grocy" \
-    org.label-schema.vendor="Community Hass.io Addons"
+    org.opencontainers.image.title="Grocy" \
+    org.opencontainers.image.description="ERP beyond your fridge! A groceries & household management solution for your home" \
+    org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
+    org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
+    org.opencontainers.image.licenses="MIT" \
+    org.opencontainers.image.url="https://addons.community" \
+    org.opencontainers.image.source="https://github.com/hassio-addons/addon-grocy" \
+    org.opencontainers.image.documentation="https://github.com/hassio-addons/addon-grocy/blob/master/README.md" \
+    org.opencontainers.image.created=${BUILD_DATE} \
+    org.opencontainers.image.revision=${BUILD_REF} \
+    org.opencontainers.image.version=${BUILD_VERSION}

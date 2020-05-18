@@ -49,7 +49,7 @@
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
-    "culture": "list(da|de|en|en_GB|es|fr|hu|it|nl|no|pl|ru|sv_SE|tr)",
+    "culture": "list(da|de|en|en_GB|es|fr|hu|it|nl|no|pl|pt_BR|pt_PT|ru|sk_SK|sv_SE|tr)",
     "currency": "match(^[A-Z]{3}$)",
     "entry_page": "list(stock|shoppinglist|recipes|chores|tasks|batteries|equipment|calendar|mealplan)",
     "features": {

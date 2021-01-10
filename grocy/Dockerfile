@@ -29,7 +29,7 @@ RUN \
     \
     && yarn global add modclean \
     \
-    && git clone --branch "v2.7.1" --depth=1 \
+    && git clone --branch "v3.0.1" --depth=1 \
         https://github.com/grocy/grocy.git /var/www/grocy \
     \
     && cd /var/www/grocy \

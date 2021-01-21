@@ -190,8 +190,7 @@ equal Sunday:
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
@@ -256,7 +255,6 @@ SOFTWARE.
 [grocy-demo]: https://demo-en.grocy.info
 [grocy]: https://grocy.info/
 [issue]: https://github.com/hassio-addons/addon-grocy/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [python-packages]: https://pypi.org/
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-grocy/releases

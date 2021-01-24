@@ -5,7 +5,7 @@
 # ==============================================================================
 
 # Wait for PHP-FPM to become available
-bashio::net.wait_for 9001
+bashio::net.wait_for 9002
 
 bashio::log.info "Starting NGinx...."
 

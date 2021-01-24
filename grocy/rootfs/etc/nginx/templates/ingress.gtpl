@@ -1,15 +1,13 @@
 server {
-    listen 80 default_server ssl http2;
-
-    include /etc/nginx/includes/ssl_params.conf;
-
-    ssl_certificate /ssl/%%certfile%%;
-    ssl_certificate_key /ssl/%%keyfile%%;
+    listen {{ .interface }}:1337 default_server;
 
     include /etc/nginx/includes/server_params.conf;
 
+    allow   172.30.32.2;
+    deny    all;
+
     location ~ .php$ {
-        fastcgi_pass 127.0.0.1:9001;
+        fastcgi_pass 127.0.0.1:9002;
         fastcgi_read_timeout 900;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
         fastcgi_index index.php;

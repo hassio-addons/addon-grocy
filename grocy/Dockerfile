@@ -21,6 +21,7 @@ RUN \
         php7-tokenizer=7.4.14-r0 \
         php7-fileinfo=7.4.14-r0 \
         php7=7.4.14-r0 \
+        php7-ctype=7.4.14-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.30.0-r0 \
@@ -29,7 +30,7 @@ RUN \
     \
     && yarn global add modclean \
     \
-    && git clone --branch "v2.7.1" --depth=1 \
+    && git clone --branch "v3.0.1" --depth=1 \
         https://github.com/grocy/grocy.git /var/www/grocy \
     \
     && cd /var/www/grocy \

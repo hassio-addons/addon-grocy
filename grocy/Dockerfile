@@ -24,7 +24,7 @@ RUN \
         php7-ctype=7.4.14-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.30.0-r0 \
+        git=2.30.1-r0 \
         yarn=1.22.10-r0 \
         composer=2.0.9-r0 \
     \

@@ -26,7 +26,7 @@ RUN \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.30.1-r0 \
         yarn=1.22.10-r0 \
-        composer=2.0.9-r0 \
+        composer=2.0.11-r0 \
     \
     && yarn global add modclean \
     \

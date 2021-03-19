@@ -10,6 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         nginx=1.18.0-r13 \
+        php7-exif=7.4.15-r0 \
         php7-fpm=7.4.15-r0 \
         php7-gd=7.4.15-r0 \
         php7-json=7.4.15-r0 \

@@ -13,6 +13,7 @@ RUN \
         php7-fpm=7.4.15-r0 \
         php7-gd=7.4.15-r0 \
         php7-json=7.4.15-r0 \
+        php7-ldap=7.4.15-r0 \
         php7-mbstring=7.4.15-r0 \
         php7-opcache=7.4.15-r0 \
         php7-pdo_sqlite=7.4.15-r0 \

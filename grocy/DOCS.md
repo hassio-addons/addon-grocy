@@ -196,6 +196,8 @@ equal Sunday:
   on the internet based on the product barcode. This is currently not yet
   supported by the add-on.
 
+You should have a look to [Barcode Buddy][barcodebuddy], which provides that functionality with a Android app as a barcode scanner and a comfortable web UI to add the scanned products in Grocy (hosted in a hassio add-on).
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
@@ -263,6 +265,7 @@ SOFTWARE.
 [frenck]: https://github.com/frenck
 [grocy-demo]: https://demo-en.grocy.info
 [grocy]: https://grocy.info/
+[barcodebuddy]: https://github.com/Forceu/barcodebuddy
 [issue]: https://github.com/hassio-addons/addon-grocy/issues
 [python-packages]: https://pypi.org/
 [reddit]: https://reddit.com/r/homeassistant

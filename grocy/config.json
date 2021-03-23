@@ -68,7 +68,6 @@
       "stock_product_freezing": "bool",
       "stock_product_opened_tracking": "bool",
       "stock_count_opened_products_against_minimum_stock_amount": "bool"
-
     },
     "ssl": "bool",
     "certfile": "str",

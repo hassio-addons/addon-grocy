@@ -10,7 +10,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         nginx=1.18.0-r13 \
+        patch=2.7.6-r6 \
+        php7-ctype=7.4.15-r0 \
         php7-exif=7.4.15-r0 \
+        php7-fileinfo=7.4.15-r0 \
         php7-fpm=7.4.15-r0 \
         php7-gd=7.4.15-r0 \
         php7-json=7.4.15-r0 \
@@ -21,9 +24,7 @@ RUN \
         php7-pdo=7.4.15-r0 \
         php7-simplexml=7.4.15-r0 \
         php7-tokenizer=7.4.15-r0 \
-        php7-fileinfo=7.4.15-r0 \
         php7=7.4.15-r0 \
-        php7-ctype=7.4.15-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.30.2-r0 \

@@ -197,7 +197,6 @@ equal Sunday:
   on the internet based on the product barcode. This is currently not yet
   supported by the add-on.
 
-
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]

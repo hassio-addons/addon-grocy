@@ -50,7 +50,8 @@ tweaks:
   stock_best_before_date_tracking: true
   stock_location_tracking: true
   stock_price_tracking: true
-  stock_produc_freezing: true
+  stock_product_freezing: true
+  stock_product_opened_tracking: true
   stock_count_opened_products_against_minimum_stock_amount: true
 log_level: info
 ssl: false
@@ -196,9 +197,6 @@ equal Sunday:
   on the internet based on the product barcode. This is currently not yet
   supported by the add-on.
 
-You should have a look to [Barcode Buddy][barcodebuddy], which provides that
-functionality with a Android app as a barcode scanner and a comfortable web UI
-to add the scanned products in Grocy (hosted in a hassio add-on).
 
 ## Changelog & Releases
 
@@ -267,7 +265,6 @@ SOFTWARE.
 [frenck]: https://github.com/frenck
 [grocy-demo]: https://demo-en.grocy.info
 [grocy]: https://grocy.info/
-[barcodebuddy]: https://github.com/Forceu/barcodebuddy
 [issue]: https://github.com/hassio-addons/addon-grocy/issues
 [python-packages]: https://pypi.org/
 [reddit]: https://reddit.com/r/homeassistant

@@ -19,6 +19,7 @@ comparison to installing any other Home Assistant add-on.
 
 1. Search for the "Grocy" add-on in the Supervisor add-on store.
 1. Install the "Grocy" add-on.
+1. Set the `base_url` in the configuration to your home assistant URL.
 1. Start the "Grocy" add-on.
 1. Check the logs of the "Grocy" add-on to see if everything went well.
 1. Click on the "OPEN WEB UI" button to get into the interface of Grocy.
@@ -32,6 +33,7 @@ comparison to installing any other Home Assistant add-on.
 Example add-on configuration:
 
 ```yaml
+base_url: http://homeassistant.local:8123
 culture: en
 currency: USD
 entry_page: stock
@@ -60,6 +62,11 @@ keyfile: privkey.pem
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
+
+### Option `base_url`
+The `base_url` contains the URL of your home assistant's installation. This is required for your installation to function properly.
+
+Example: `http://homeassistant.local:8123`
 
 ### Option: `log_level`
 

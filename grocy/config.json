@@ -15,6 +15,7 @@
     "80/tcp": "Web interface (Not required for Ingress)"
   },
   "options": {
+    "base_url": "http://homeassistant.local:8123",
     "culture": "en",
     "currency": "USD",
     "entry_page": "stock",
@@ -43,6 +44,7 @@
     "keyfile": "privkey.pem"
   },
   "schema": {
+    "base_url": "str",
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "culture": "list(cs|da|de|el_GR|en|en_GB|es|fi|fr|he_IL|hu|it|ja|ko_KR|nl|no|pl|pt_BR|pt_PT|ru|sk_SK|sv_SE|ta|tr|zh_CN|zh_TW)",
     "currency": "match(^[A-Z]{3}$)",

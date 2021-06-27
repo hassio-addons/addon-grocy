@@ -24,7 +24,9 @@ bashio::log.debug 'Symlinking data directory to persistent storage location...'
 rm -f -r /var/www/grocy/data
 ln -s /data/grocy /var/www/grocy/data
 
-# Patch current relative URL handling braindamage
-bashio::log.info "Patching Grocy to fix relative URL handling..."
-cd /var/www/grocy || bashio.exit.nok 'Failed cd'
-patch -p1 < /patches/fix_braindamage.patch || true
+if bashio::var.is_empty "$(bashio::config 'base_url')"; then
+    # Patch current relative URL handling braindamage
+    bashio::log.info "Patching Grocy to fix relative URL handling..."
+    cd /var/www/grocy || bashio.exit.nok 'Failed cd'
+    patch -p1 < /patches/fix_braindamage.patch || true
+fi

@@ -11,29 +11,35 @@ RUN \
     apk add --no-cache \
         nginx=1.20.1-r3 \
         patch=2.7.6-r7 \
-        php7-ctype=7.4.21-r0 \
-        php7-exif=7.4.21-r0 \
-        php7-fileinfo=7.4.21-r0 \
-        php7-fpm=7.4.21-r0 \
-        php7-gd=7.4.21-r0 \
-        php7-json=7.4.21-r0 \
-        php7-ldap=7.4.21-r0 \
-        php7-mbstring=7.4.21-r0 \
-        php7-opcache=7.4.21-r0 \
-        php7-pdo_sqlite=7.4.21-r0 \
-        php7-pdo=7.4.21-r0 \
-        php7-simplexml=7.4.21-r0 \
-        php7-tokenizer=7.4.21-r0 \
-        php7=7.4.21-r0 \
+        php8-ctype=8.0.8-r0 \
+        php8-exif=8.0.8-r0 \
+        php8-fileinfo=8.0.8-r0 \
+        php8-fpm=8.0.8-r0 \
+        php8-gd=8.0.8-r0 \
+        php8-intl=8.0.8-r0 \
+        php8-ldap=8.0.8-r0 \
+        php8-mbstring=8.0.8-r0 \
+        php8-opcache=8.0.8-r0 \
+        php8-pdo_sqlite=8.0.8-r0 \
+        php8-pdo=8.0.8-r0 \
+        php8-simplexml=8.0.8-r0 \
+        php8-tokenizer=8.0.8-r0 \
+        php8=8.0.8-r0 \
+    \
+    && ln -s /usr/bin/php8 /usr/bin/php \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.32.0-r0 \
+        php8-openssl=8.0.8-r0 \
+        php8-phar=8.0.8-r0 \
         yarn=1.22.10-r0 \
-        composer=2.1.3-r0 \
+    \
+    && curl -sS https://getcomposer.org/installer \
+        | php -- --install-dir=/usr/local/bin --filename=composer \
     \
     && yarn global add modclean \
     \
-    && git clone --branch "v3.0.1" --depth=1 \
+    && git clone --branch "v3.1.0" --depth=1 \
         https://github.com/grocy/grocy.git /var/www/grocy \
     \
     && cd /var/www/grocy \
@@ -55,13 +61,15 @@ RUN \
     && rm -f -r \
         /tmp/* \
         /etc/nginx \
-        /usr/local/share/.cache \
+        /root/.composer \
         /usr/lib/node_modules \
+        /usr/local/bin/composer \
+        /usr/local/share/.cache \
         /var/www/grocy/.git \
         /var/www/grocy/.tx \
         /var/www/grocy/.vscode \
-        /var/www/grocy/build.bat \
-        /var/www/grocy/build_tools
+        /var/www/grocy/build_tools \
+        /var/www/grocy/build.bat
 
 # Copy root filesystem
 COPY rootfs /

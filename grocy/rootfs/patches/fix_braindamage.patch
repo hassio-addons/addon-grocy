@@ -7,8 +7,13 @@ index fceaaa0..bfc76e6 100644
  		Grocy.Mode = '{{ GROCY_MODE }}';
 -		Grocy.BaseUrl = '{{ $U('/') }}';
 -		Grocy.CurrentUrlRelative = "/" + window.location.href.split('?')[0].replace(Grocy.BaseUrl, "");
-+		Grocy.BaseUrl = window.location.origin + '{{ $U('/') }}';
-+		Grocy.CurrentUrlRelative = "/" + window.location.pathname.replace((new URL(Grocy.BaseUrl)).pathname, "");
++		if('{{ $U('/') }}'.includes('http')) {
++			Grocy.BaseUrl = '{{ $U('/') }}';
++			Grocy.CurrentUrlRelative = "/" + window.location.href.split('?')[0].replace(Grocy.BaseUrl, "");
++		} else {
++			Grocy.BaseUrl = window.location.origin + '{{ $U('/') }}';
++			Grocy.CurrentUrlRelative = "/" + window.location.pathname.replace((new URL(Grocy.BaseUrl)).pathname, "");
++		}
  		Grocy.ActiveNav = '@yield('activeNav', '')';
  		Grocy.Culture = '{{ GROCY_LOCALE }}';
  		Grocy.Currency = '{{ GROCY_CURRENCY }}';

@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -11,27 +11,27 @@ RUN \
     apk add --no-cache \
         nginx=1.20.1-r3 \
         patch=2.7.6-r7 \
-        php8-ctype=8.0.9-r0 \
-        php8-exif=8.0.9-r0 \
-        php8-fileinfo=8.0.9-r0 \
-        php8-fpm=8.0.9-r0 \
-        php8-gd=8.0.9-r0 \
-        php8-intl=8.0.9-r0 \
-        php8-ldap=8.0.9-r0 \
-        php8-mbstring=8.0.9-r0 \
-        php8-opcache=8.0.9-r0 \
-        php8-pdo_sqlite=8.0.9-r0 \
-        php8-pdo=8.0.9-r0 \
-        php8-simplexml=8.0.9-r0 \
-        php8-tokenizer=8.0.9-r0 \
-        php8=8.0.9-r0 \
+        php8-ctype=8.0.11-r0 \
+        php8-exif=8.0.11-r0 \
+        php8-fileinfo=8.0.11-r0 \
+        php8-fpm=8.0.11-r0 \
+        php8-gd=8.0.11-r0 \
+        php8-intl=8.0.11-r0 \
+        php8-ldap=8.0.11-r0 \
+        php8-mbstring=8.0.11-r0 \
+        php8-opcache=8.0.11-r0 \
+        php8-pdo_sqlite=8.0.11-r0 \
+        php8-pdo=8.0.11-r0 \
+        php8-simplexml=8.0.11-r0 \
+        php8-tokenizer=8.0.11-r0 \
+        php8=8.0.11-r0 \
     \
     && ln -s /usr/bin/php8 /usr/bin/php \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.32.0-r0 \
-        php8-openssl=8.0.9-r0 \
-        php8-phar=8.0.9-r0 \
+        php8-openssl=8.0.11-r0 \
+        php8-phar=8.0.11-r0 \
         yarn=1.22.10-r0 \
     \
     && curl -sS https://getcomposer.org/installer \

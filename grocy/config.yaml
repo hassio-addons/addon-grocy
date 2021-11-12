@@ -17,8 +17,10 @@ map:
   - ssl
 ports:
   80/tcp: null
+  443/tcp: null
 ports_description:
   80/tcp: Web interface (Not required for Ingress)
+  443/tcp: HTTPS Web interface (Not required for Ingress)
 options:
   culture: en
   currency: USD

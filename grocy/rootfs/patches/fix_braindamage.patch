@@ -5,9 +5,10 @@ index fceaaa0..bfc76e6 100644
 @@ -87,7 +87,7 @@
  		Grocy.Components = { };
  		Grocy.Mode = '{{ GROCY_MODE }}';
--		Grocy.BaseUrl = '{{ $U('/') }}';
 -		Grocy.CurrentUrlRelative = "/" + window.location.href.split('?')[0].replace(Grocy.BaseUrl, "");
-+		Grocy.BaseUrl = window.location.origin + '{{ $U('/') }}';
++		if(Grocy.BaseUrl.indexOf('http') != 0 || Grocy.BaseUrl.indexOf('hassio_ingress') >= 0) {
++			Grocy.BaseUrl = window.location.origin + '{{ $U('/') }}';
++		};
 +		Grocy.CurrentUrlRelative = "/" + window.location.pathname.replace(Grocy.BaseUrl, "");
  		Grocy.ActiveNav = '@yield('activeNav', '')';
  		Grocy.Culture = '{{ GROCY_LOCALE }}';

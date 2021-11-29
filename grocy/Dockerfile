@@ -16,6 +16,7 @@ RUN \
         php8-fileinfo=8.0.13-r0 \
         php8-fpm=8.0.13-r0 \
         php8-gd=8.0.13-r0 \
+        php8-iconv=8.0.13-r0 \
         php8-intl=8.0.13-r0 \
         php8-ldap=8.0.13-r0 \
         php8-mbstring=8.0.13-r0 \

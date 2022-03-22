@@ -110,6 +110,7 @@ The private key file to use for SSL.
 
 Is used for setting the language. Choose between:
 
+- `ca` (Catalan)
 - `cs` (Czech)
 - `da` (Danish)
 - `de` (German)

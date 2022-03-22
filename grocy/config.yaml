@@ -46,6 +46,7 @@ options:
   ssl: true
   certfile: fullchain.pem
   keyfile: privkey.pem
+  grocy_ingress_user: ""
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   culture: list(ca|cs|da|de|el_GR|en|en_GB|es|fi|fr|he_IL|hu|it|ja|ko_KR|nl|no|pl|pt_BR|pt_PT|ru|sk_SK|sv_SE|ta|tr|zh_CN|zh_TW)
@@ -74,3 +75,4 @@ schema:
   ssl: bool
   certfile: str
   keyfile: str
+  grocy_ingress_user: str

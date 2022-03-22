@@ -7,6 +7,7 @@
 # Generate Ingress PHP-FPM configuration
 bashio::var.json \
     interface "$(bashio::addon.ip_address)" \
+    grocy_user "$(bashio::config 'grocy_ingress_user')" \
     | tempio \
         -template /etc/nginx/templates/ingress.gtpl \
         -out /etc/nginx/servers/ingress.conf

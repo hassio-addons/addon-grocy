@@ -202,6 +202,12 @@ equal Sunday:
 - `calendar_first_day_of_week`
 - `meal_plan_first_day_of_week`
 
+### Option: `grocy_ingress_user`
+
+Allows you to specify a default ingress user if desired (e.g. `admin`).
+
+If no ingress user is set, the default login authentication is used.
+
 ## Known issues and limitations
 
 - Grocy support to provide custom lookup resources to lookup information

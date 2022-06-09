@@ -56,9 +56,10 @@ RUN \
     \
     && find /var/www/ -type f -name "*.md" -depth -exec rm -f {} \; \
     && rm -f -r \
-        /tmp/* \
         /etc/nginx \
+        /etc/php8/php-fpm.d/www.conf \
         /root/.composer \
+        /tmp/* \
         /usr/lib/node_modules \
         /usr/local/bin/composer \
         /usr/local/share/.cache \

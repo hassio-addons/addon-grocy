@@ -1,6 +1,6 @@
 [{{ .name }}]
-user = nginx
-group = nginx
+user = root
+group = root
 listen = 127.0.0.1:{{ .port }}
 pm = dynamic
 pm.max_children = 10

@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: Grocy
 # Sets up Grocy before the server starts

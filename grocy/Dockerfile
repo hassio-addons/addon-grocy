@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,26 +12,26 @@ RUN \
         composer=2.3.10-r0 \
         nginx=1.22.0-r1 \
         patch=2.7.6-r7 \
-        php8-ctype=8.0.21-r0 \
-        php8-exif=8.0.21-r0 \
-        php8-fileinfo=8.0.21-r0 \
-        php8-fpm=8.0.21-r0 \
-        php8-gd=8.0.21-r0 \
-        php8-iconv=8.0.21-r0 \
-        php8-intl=8.0.21-r0 \
-        php8-ldap=8.0.21-r0 \
-        php8-mbstring=8.0.21-r0 \
-        php8-opcache=8.0.21-r0 \
-        php8-pdo_sqlite=8.0.21-r0 \
-        php8-pdo=8.0.21-r0 \
-        php8-simplexml=8.0.21-r0 \
-        php8-tokenizer=8.0.21-r0 \
-        php8=8.0.21-r0 \
+        php8-ctype=8.0.22-r0 \
+        php8-exif=8.0.22-r0 \
+        php8-fileinfo=8.0.22-r0 \
+        php8-fpm=8.0.22-r0 \
+        php8-gd=8.0.22-r0 \
+        php8-iconv=8.0.22-r0 \
+        php8-intl=8.0.22-r0 \
+        php8-ldap=8.0.22-r0 \
+        php8-mbstring=8.0.22-r0 \
+        php8-opcache=8.0.22-r0 \
+        php8-pdo_sqlite=8.0.22-r0 \
+        php8-pdo=8.0.22-r0 \
+        php8-simplexml=8.0.22-r0 \
+        php8-tokenizer=8.0.22-r0 \
+        php8=8.0.22-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.36.2-r0 \
-        php8-openssl=8.0.21-r0 \
-        php8-phar=8.0.21-r0 \
+        php8-openssl=8.0.22-r0 \
+        php8-phar=8.0.22-r0 \
         yarn=1.22.19-r0 \
     \
     && yarn global add modclean \

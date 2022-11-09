@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         composer=2.4.2-r0 \
-        nginx=1.22.0-r1 \
+        nginx=1.22.1-r0 \
         patch=2.7.6-r7 \
         php8-ctype=8.0.25-r0 \
         php8-exif=8.0.25-r0 \

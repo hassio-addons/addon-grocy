@@ -29,7 +29,7 @@ RUN \
         php8=8.0.25-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.36.2-r0 \
+        git=2.36.3-r0 \
         php8-openssl=8.0.25-r0 \
         php8-phar=8.0.25-r0 \
         yarn=1.22.19-r0 \

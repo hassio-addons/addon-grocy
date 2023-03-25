@@ -42,7 +42,7 @@
     {
       "groupName": "PHP",
       "matchDatasources": ["repology"],
-      "matchPackagePatterns": ["^php"],
+      "matchDepPatterns": ["^php"],
       "automerge": true
     },
     {

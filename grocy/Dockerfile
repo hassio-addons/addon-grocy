@@ -27,7 +27,7 @@ RUN \
         php81-pdo=8.1.16-r0 \
         php81-simplexml=8.1.16-r0 \
         php81-tokenizer=8.1.16-r0 \
-        php81=8.1.16-r0 \
+        php81=8.1.17-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.38.4-r1 \

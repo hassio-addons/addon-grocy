@@ -15,7 +15,7 @@ RUN \
         patch=2.7.6-r8 \
         php81-ctype=8.1.16-r0 \
         php81-exif=8.1.16-r0 \
-        php81-fileinfo=8.1.16-r0 \
+        php81-fileinfo=8.1.17-r0 \
         php81-fpm=8.1.16-r0 \
         php81-gd=8.1.16-r0 \
         php81-iconv=8.1.16-r0 \

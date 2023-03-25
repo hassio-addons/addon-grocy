@@ -13,7 +13,7 @@ RUN \
         composer=2.4.4-r0 \
         nginx=1.22.1-r0 \
         patch=2.7.6-r8 \
-        php81-ctype=8.1.16-r0 \
+        php81-ctype=8.1.17-r0 \
         php81-exif=8.1.16-r0 \
         php81-fileinfo=8.1.16-r0 \
         php81-fpm=8.1.16-r0 \

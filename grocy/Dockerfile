@@ -12,7 +12,7 @@ RUN \
     apk add --no-cache \
         composer=2.4.4-r0 \
         nginx=1.22.1-r0 \
-        patch=2.7.6-r8 \
+        patch=2.7.6-r9 \
         php81-ctype=8.1.17-r0 \
         php81-exif=8.1.17-r0 \
         php81-fileinfo=8.1.17-r0 \

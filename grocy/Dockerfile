@@ -30,7 +30,7 @@ RUN \
         php81=8.1.18-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.38.4-r1 \
+        git=2.38.5-r0 \
         php81-openssl=8.1.18-r0 \
         php81-phar=8.1.18-r0 \
         yarn=1.22.19-r0 \

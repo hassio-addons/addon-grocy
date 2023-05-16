@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:13.2.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -10,29 +10,29 @@ ARG GROCY_VERSION="v3.3.2"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        composer=2.4.4-r0 \
-        nginx=1.22.1-r0 \
-        patch=2.7.6-r9 \
-        php81-ctype=8.1.18-r0 \
-        php81-exif=8.1.18-r0 \
-        php81-fileinfo=8.1.18-r0 \
-        php81-fpm=8.1.18-r0 \
-        php81-gd=8.1.18-r0 \
-        php81-iconv=8.1.18-r0 \
-        php81-intl=8.1.18-r0 \
-        php81-ldap=8.1.18-r0 \
-        php81-mbstring=8.1.18-r0 \
-        php81-opcache=8.1.18-r0 \
-        php81-pdo_sqlite=8.1.18-r0 \
-        php81-pdo=8.1.18-r0 \
-        php81-simplexml=8.1.18-r0 \
-        php81-tokenizer=8.1.18-r0 \
-        php81=8.1.18-r0 \
+        composer=2.5.5-r0 \
+        nginx=1.24.0-r3 \
+        patch=2.7.6-r10 \
+        php81-ctype=8.1.19-r2 \
+        php81-exif=8.1.19-r2 \
+        php81-fileinfo=8.1.19-r2 \
+        php81-fpm=8.1.19-r2 \
+        php81-gd=8.1.19-r2 \
+        php81-iconv=8.1.19-r2 \
+        php81-intl=8.1.19-r2 \
+        php81-ldap=8.1.19-r2 \
+        php81-mbstring=8.1.19-r2 \
+        php81-opcache=8.1.19-r2 \
+        php81-pdo_sqlite=8.1.19-r2 \
+        php81-pdo=8.1.19-r2 \
+        php81-simplexml=8.1.19-r2 \
+        php81-tokenizer=8.1.19-r2 \
+        php81=8.1.19-r2 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.38.5-r0 \
-        php81-openssl=8.1.18-r0 \
-        php81-phar=8.1.18-r0 \
+        git=2.40.1-r0 \
+        php81-openssl=8.1.19-r2 \
+        php81-phar=8.1.19-r2 \
         yarn=1.22.19-r0 \
     \
     && yarn global add modclean \

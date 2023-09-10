@@ -13,26 +13,26 @@ RUN \
         composer=2.5.8-r0 \
         nginx=1.24.0-r6 \
         patch=2.7.6-r10 \
-        php81-ctype=8.1.22-r0 \
-        php81-exif=8.1.22-r0 \
-        php81-fileinfo=8.1.22-r0 \
-        php81-fpm=8.1.22-r0 \
-        php81-gd=8.1.22-r0 \
-        php81-iconv=8.1.22-r0 \
-        php81-intl=8.1.22-r0 \
-        php81-ldap=8.1.22-r0 \
-        php81-mbstring=8.1.22-r0 \
-        php81-opcache=8.1.22-r0 \
-        php81-pdo_sqlite=8.1.22-r0 \
-        php81-pdo=8.1.22-r0 \
-        php81-simplexml=8.1.22-r0 \
-        php81-tokenizer=8.1.22-r0 \
-        php81=8.1.22-r0 \
+        php81-ctype=8.1.23-r0 \
+        php81-exif=8.1.23-r0 \
+        php81-fileinfo=8.1.23-r0 \
+        php81-fpm=8.1.23-r0 \
+        php81-gd=8.1.23-r0 \
+        php81-iconv=8.1.23-r0 \
+        php81-intl=8.1.23-r0 \
+        php81-ldap=8.1.23-r0 \
+        php81-mbstring=8.1.23-r0 \
+        php81-opcache=8.1.23-r0 \
+        php81-pdo_sqlite=8.1.23-r0 \
+        php81-pdo=8.1.23-r0 \
+        php81-simplexml=8.1.23-r0 \
+        php81-tokenizer=8.1.23-r0 \
+        php81=8.1.23-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.40.1-r0 \
-        php81-openssl=8.1.22-r0 \
-        php81-phar=8.1.22-r0 \
+        php81-openssl=8.1.23-r0 \
+        php81-phar=8.1.23-r0 \
         yarn=1.22.19-r0 \
     \
     && yarn global add modclean \

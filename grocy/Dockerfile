@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG GROCY_VERSION="v3.3.2"
+ARG GROCY_VERSION="v4.0.3"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \

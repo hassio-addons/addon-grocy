@@ -1,8 +1,8 @@
 diff --git a/views/layout/default.blade.php b/views/layout/default.blade.php
-index 4eb3fb8d..d4e5e007 100644
+index 551d2eb0..1ce31f69 100644
 --- a/views/layout/default.blade.php
 +++ b/views/layout/default.blade.php
-@@ -88,6 +88,10 @@
+@@ -94,6 +94,10 @@
  		Grocy.Mode = '{{ GROCY_MODE }}';
  		Grocy.BaseUrl = '{{ $U('/') }}';
  		Grocy.CurrentUrlRelative = "/" + window.location.href.split('?')[0].replace(Grocy.BaseUrl, "");
@@ -10,6 +10,6 @@ index 4eb3fb8d..d4e5e007 100644
 +			Grocy.BaseUrl = window.location.origin + '{{ $U('/') }}';
 +			Grocy.CurrentUrlRelative = "/" + window.location.pathname.replace(Grocy.BaseUrl, "");
 +		};
- 		Grocy.ActiveNav = '@yield('activeNav', '')';
+ 		Grocy.View = '{{ $viewName }}';
  		Grocy.Currency = '{{ GROCY_CURRENCY }}';
- 		Grocy.CalendarFirstDayOfWeek = '{{ GROCY_CALENDAR_FIRST_DAY_OF_WEEK }}';
+ 		Grocy.EnergyUnit = '{{ GROCY_ENERGY_UNIT }}';

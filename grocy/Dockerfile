@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.1.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.2.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -10,7 +10,7 @@ ARG GROCY_VERSION="v4.0.3"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        composer=2.5.8-r0 \
+        composer=2.6.5-r0 \
         nginx=1.24.0-r6 \
         patch=2.7.6-r10 \
         php81-ctype=8.1.23-r0 \

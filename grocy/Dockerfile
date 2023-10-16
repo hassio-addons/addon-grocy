@@ -11,7 +11,7 @@ ARG GROCY_VERSION="v4.0.3"
 RUN \
     apk add --no-cache \
         composer=2.6.5-r0 \
-        nginx=1.24.0-r6 \
+        nginx=1.24.0-r7 \
         patch=2.7.6-r10 \
         php81-ctype=8.1.23-r0 \
         php81-exif=8.1.23-r0 \

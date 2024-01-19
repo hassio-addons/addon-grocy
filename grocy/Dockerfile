@@ -13,26 +13,26 @@ RUN \
         composer=2.6.6-r0 \
         nginx=1.24.0-r14 \
         patch=2.7.6-r10 \
-        php82-ctype=8.2.14-r0 \
-        php82-exif=8.2.14-r0 \
-        php82-fileinfo=8.2.14-r0 \
-        php82-fpm=8.2.14-r0 \
-        php82-gd=8.2.14-r0 \
-        php82-iconv=8.2.14-r0 \
-        php82-intl=8.2.14-r0 \
-        php82-ldap=8.2.14-r0 \
-        php82-mbstring=8.2.14-r0 \
-        php82-opcache=8.2.14-r0 \
-        php82-pdo_sqlite=8.2.14-r0 \
-        php82-pdo=8.2.14-r0 \
-        php82-simplexml=8.2.14-r0 \
-        php82-tokenizer=8.2.14-r0 \
-        php82=8.2.14-r0 \
+        php82-ctype=8.2.15-r0 \
+        php82-exif=8.2.15-r0 \
+        php82-fileinfo=8.2.15-r0 \
+        php82-fpm=8.2.15-r0 \
+        php82-gd=8.2.15-r0 \
+        php82-iconv=8.2.15-r0 \
+        php82-intl=8.2.15-r0 \
+        php82-ldap=8.2.15-r0 \
+        php82-mbstring=8.2.15-r0 \
+        php82-opcache=8.2.15-r0 \
+        php82-pdo_sqlite=8.2.15-r0 \
+        php82-pdo=8.2.15-r0 \
+        php82-simplexml=8.2.15-r0 \
+        php82-tokenizer=8.2.15-r0 \
+        php82=8.2.15-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.43.0-r0 \
-        php82-openssl=8.2.14-r0 \
-        php82-phar=8.2.14-r0 \
+        php82-openssl=8.2.15-r0 \
+        php82-phar=8.2.15-r0 \
     \
     && yarn global add modclean \
     \

@@ -171,6 +171,8 @@ or disabled:
 - `shoppinglist`
 - `stock`
 - `tasks`
+- `label_printer`
+- `thermal_printer`
 
 Set it `true` to enable it, `false` otherwise.
 
@@ -201,6 +203,27 @@ equal Sunday:
 Allows you to specify a default ingress user if desired (e.g. `admin`).
 
 If no ingress user is set, the default login authentication is used.
+
+### Option: `Label Printer`
+
+Allows posting to a webhook to print labels
+
+- `label_printer_webhook` The URI that Grocy will POST to when asked to print a label
+- `label_printer_run_server` Whether the webhook will be called server- or client-side
+- `label_printer_params` Additional parameters supplied to the webhook
+- `` TRUE to use JSON or FALSE to use normal POST request variables
+
+### Option: `Thermal Printer`
+
+Thermal printers are receipt printers, not regular printers,
+the printer must support the ESC/POS protocol, see https://github.com/mike42/escpos-php
+
+- `tprinter_is_network_printer` Set to true if it's a network printer
+- `tprinter_print_quantity_name` Set to false if you do not want to print the quantity names (related to the shopping list)
+- `tprinter_print_notes` Set to false if you do not want to print notes (related to the shopping list)
+- `tprinter_ip` IP of the network printer (does only matter if it's a network printer)
+- `tprinter_port` Port of the network printer (does only matter if it's a network printer)
+- `tprinter_connector` Printer device (does only matter if you use a locally attached printer) For USB on Linux this is often '/dev/usb/lp0', for serial printers it could be similar to '/dev/ttyS0' Make sure that the user that runs the webserver has permissions to write to the printer - on Linux add your webserver user to the LP group with usermod -a -G lp www-data
 
 ## Known issues and limitations
 

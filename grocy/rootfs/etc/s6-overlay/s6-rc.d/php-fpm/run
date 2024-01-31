@@ -6,6 +6,11 @@
 # ==============================================================================
 declare caldayweek
 declare mealday
+declare label_printer_webhook
+declare label_printer_params
+declare tprinter_ip
+declare tprinter_port
+declare tprinter_connector
 export GROCY_CULTURE
 export GROCY_CURRENCY
 export GROCY_ENTRY_PAGE
@@ -42,6 +47,14 @@ fi
 
 if bashio::config.false 'features.tasks'; then
     export GROCY_FEATURE_FLAG_TASKS=0
+fi
+
+if bashio::config.true 'features.label_printer'; then
+    export GROCY_FEATURE_FLAG_LABEL_PRINTER=1
+fi
+
+if bashio::config.true 'features.thermal_printer'; then
+    export FEATURE_FLAG_THERMAL_PRINTER=1
 fi
 
 if bashio::config.has_value 'tweaks.calendar_first_day_of_week'; then
@@ -84,6 +97,51 @@ fi
 
 if bashio::config.false 'tweaks.stock_count_opened_products_against_minimum_stock_amount'; then
     export GROCY_FEATURE_SETTING_STOCK_COUNT_OPENED_PRODUCTS_AGAINST_MINIMUM_STOCK_AMOUNT=0
+fi
+
+if bashio::config.has_value 'tweaks.label_printer_webhook'; then
+    label_printer_webhook=$(bashio::config 'tweaks.label_printer_webhook')
+    export GROCY_MEAL_PLAN_FIRST_DAY_OF_WEEK=${label_printer_webhook}
+fi
+
+if bashio::config.false 'tweaks.label_printer_run_server'; then
+    export GROCY_LABEL_PRINTER_RUN_SERVER=0
+fi
+
+if bashio::config.has_value 'tweaks.label_printer_params'; then
+    label_printer_params=$(bashio::config 'tweaks.label_printer_params')
+    export GROCY_LABEL_PRINTER_PARAMS=${label_printer_params}
+fi
+
+if bashio::config.true 'tweaks.label_printer_hook_json'; then
+    export GROCY_LABEL_PRINTER_HOOK_JSON=1
+fi
+
+if bashio::config.true 'tweaks.tprinter_is_network_printer'; then
+    export GROCY_TPRINTER_IS_NETWORK_PRINTER=1
+fi
+
+if bashio::config.false 'tweaks.tprinter_print_quantity_name'; then
+    export GROCY_TPRINTER_PRINT_QUANTITY_NAME=0
+fi
+
+if bashio::config.false 'tweaks.tprinter_print_notes'; then
+    export GROCY_TPRINTER_PRINT_NOTES=0
+fi
+
+if bashio::config.has_value 'tweaks.tprinter_ip'; then
+    tprinter_ip=$(bashio::config 'tweaks.tprinter_ip')
+    export GROCY_TPRINTER_IP=${tprinter_ip}
+fi
+
+if bashio::config.has_value 'tweaks.tprinter_port'; then
+    tprinter_ip=$(bashio::config 'tweaks.tprinter_port')
+    export GROCY_TPRINTER_PORT=${tprinter_port}
+fi
+
+if bashio::config.has_value 'tweaks.tprinter_connector'; then
+    tprinter_connector=$(bashio::config 'tweaks.tprinter_connector')
+    export GROCY_TPRINTER_CONNECTOR=${tprinter_connector}
 fi
 
 GROCY_CULTURE=$(bashio::config "culture")

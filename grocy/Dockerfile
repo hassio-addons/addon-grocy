@@ -10,7 +10,7 @@ ARG GROCY_VERSION="v4.0.3"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        composer=2.6.6-r0 \
+        composer=2.7.0-r0 \
         nginx=1.24.0-r15 \
         patch=2.7.6-r10 \
         php82-ctype=8.2.15-r0 \

@@ -11,7 +11,7 @@ ARG GROCY_VERSION="v4.2.0"
 RUN \
     apk add --no-cache \
         composer=2.7.4-r0 \
-        nginx=1.24.0-r15 \
+        nginx=1.24.0-r16 \
         patch=2.7.6-r10 \
         php82-ctype=8.2.18-r0 \
         php82-exif=8.2.18-r0 \

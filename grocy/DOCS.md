@@ -216,7 +216,7 @@ Allows posting to a webhook to print labels
 ### Option: `Thermal Printer`
 
 Thermal printers are receipt printers, not regular printers,
-the printer must support the ESC/POS protocol, see https://github.com/mike42/escpos-php
+the printer must support the ESC/POS protocol, see [ESC/POS protocol](https://github.com/mike42/escpos-php)
 
 - `tprinter_is_network_printer` Set to true if it's a network printer
 - `tprinter_print_quantity_name` Set to false if you do not want to print the quantity names (related to the shopping list)

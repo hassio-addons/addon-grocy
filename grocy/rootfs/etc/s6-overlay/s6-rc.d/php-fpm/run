@@ -135,7 +135,7 @@ if bashio::config.has_value 'tweaks.tprinter_ip'; then
 fi
 
 if bashio::config.has_value 'tweaks.tprinter_port'; then
-    tprinter_ip=$(bashio::config 'tweaks.tprinter_port')
+    tprinter_port=$(bashio::config 'tweaks.tprinter_port')
     export GROCY_TPRINTER_PORT=${tprinter_port}
 fi
 

@@ -30,7 +30,7 @@ RUN \
         php82=8.2.26-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.43.5-r0 \
+        git=2.43.6-r0 \
         php82-openssl=8.2.26-r0 \
         php82-phar=8.2.26-r0 \
     \

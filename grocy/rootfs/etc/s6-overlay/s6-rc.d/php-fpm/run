@@ -101,7 +101,7 @@ fi
 
 if bashio::config.has_value 'tweaks.label_printer_webhook'; then
     label_printer_webhook=$(bashio::config 'tweaks.label_printer_webhook')
-    export LABEL_PRINTER_WEBHOOK=${label_printer_webhook}
+    export GROCY_LABEL_PRINTER_WEBHOOK=${label_printer_webhook}
 fi
 
 if bashio::config.false 'tweaks.label_printer_run_server'; then

@@ -77,12 +77,10 @@ schema:
     label_printer_run_server: bool
     label_printer_params: str
     label_printer_hook_json: bool
-    tprinter_is_network_printer: bool
     tprinter_print_quantity_name: bool
     tprinter_print_notes: bool
     tprinter_ip: str
     tprinter_port: int(1,65535)?
-    tprinter_connector: str
   ssl: bool
   certfile: str
   keyfile: str

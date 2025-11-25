@@ -218,12 +218,13 @@ Allows posting to a webhook to print labels
 Thermal printers are receipt printers, not regular printers,
 the printer must support the ESC/POS protocol, see [ESC/POS protocol](https://github.com/mike42/escpos-php)
 
-- `tprinter_is_network_printer` Set to true if it's a network printer
+**Note:** Only network printers are supported when running as a Home Assistant add-on. Direct USB/serial printer connections are not available in the containerized environment.
+
 - `tprinter_print_quantity_name` Set to false if you do not want to print the quantity names (related to the shopping list)
 - `tprinter_print_notes` Set to false if you do not want to print notes (related to the shopping list)
-- `tprinter_ip` IP of the network printer (does only matter if it's a network printer)
-- `tprinter_port` Port of the network printer (does only matter if it's a network printer)
-- `tprinter_connector` Printer device (does only matter if you use a locally attached printer) For USB on Linux this is often '/dev/usb/lp0', for serial printers it could be similar to '/dev/ttyS0' Make sure that the user that runs the webserver has permissions to write to the printer - on Linux add your webserver user to the LP group with usermod -a -G lp www-data
+- `tprinter_ip` IP of the network printer
+- `tprinter_port` Port of the network printer
+
 ## Known issues and limitations
 
 - Grocy support to provide custom lookup resources to lookup information
